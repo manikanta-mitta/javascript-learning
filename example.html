@@ -3,19 +3,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example.css">
     <title>DEMO HTML</title>
 </head>
 <body>
+    <p>New line added - new feature branch</p>
     <p id="para">Before click of a button</p>
     <button onclick="change()">Click Me</button>
-    <input type="text" placeholder="Type here" onkeyup="display(#input.value)" id="input">
+    <br>
+    <input type="text" placeholder="Type here" onkeyup="display()" id="input">
     <p id="para2">Entered text :</p>
     <script>
         function change() {
             document.getElementById("para").innerHTML="After click of a button";
         }
-        function display(inputValue) {
-            document.getElementById("para2").innerHTML = "Entered text : " + inputValue;
+        function display() {
+            let element = document.getElementById("input");
+            document.getElementById("para2").textContent = "Entered text :" + " " + element.value;
         }
     </script>
 </body>
