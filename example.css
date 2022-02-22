@@ -6,4 +6,9 @@ h1 {
 }
 body {
     background-color: cadetblue;
+button {
+    background-color: goldenrod;
+    border-radius: 3px;
+    color: white;
+    border:none
 }
