@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO HTML</title>
+</head>
+<body>
+    <p id="para">Before click of a button</p>
+    <button onclick="change()">Click Me</button>
+    <input type="text" placeholder="Type here" onkeyup="display(#input.value)" id="input">
+    <p id="para2">Entered text :</p>
+    <script>
+        function change() {
+            document.getElementById("para").innerHTML="After click of a button";
+        }
+        function display(inputValue) {
+            document.getElementById("para2").innerHTML = "Entered text : " + inputValue;
+        }
+    </script>
+</body>
+</html>
